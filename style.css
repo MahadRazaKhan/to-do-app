@@ -1,0 +1,140 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Container styling */
+.todo-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Input and Add button styling */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  flex: 1 1 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Task list styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background-color: #e6f2ff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Task text inside li */
+li span {
+  flex: 1 1 100%;
+  text-align: left;
+  word-break: break-word;
+  margin-bottom: 8px;
+}
+
+/* Button styles inside li */
+li button {
+  margin: 5px 5px 0 0;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  flex: 1 1 auto;
+}
+
+/* Edit button */
+li button.edit-btn {
+  background-color: #ffa500;
+}
+
+li button.edit-btn:hover {
+  background-color: #cc8400;
+}
+
+/* Delete button */
+li button.delete-btn {
+  background-color: #ff4d4d;
+}
+
+li button.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Media query for larger screens (optional tweaks) */
+@media (min-width: 600px) {
+  .input-section {
+    flex-wrap: nowrap;
+  }
+
+  input[type="text"],
+  button {
+    flex: 1;
+  }
+
+  button {
+    max-width: 120px;
+  }
+
+  li {
+    flex-wrap: nowrap;
+  }
+
+  li span {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  li button {
+    flex: none;
+  }
+}
