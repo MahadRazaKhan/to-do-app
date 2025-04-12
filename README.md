@@ -1,5 +1,5 @@
 # ✅ Responsive To-Do List App
-![To-Do App Screenshot](screenshot.png) <!-- Replace with actual screenshot path -->
+![To-Do App Screenshot](ss01.png) <!-- Replace with actual screenshot path -->
 
 ---
 
@@ -14,8 +14,6 @@ A clean, responsive and functional To-Do List Web App built using **HTML, CSS, a
 - Delete tasks
 - Fully responsive design for mobile and desktop
 - Clean UI with smooth hover effects
-
----
 
 ---
 
